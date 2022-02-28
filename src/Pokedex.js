@@ -1,9 +1,9 @@
-import pokeCard from "./Pokecard";
+import PokeCard from "./Pokecard";
 
 function Pokedex({ pokeCards }) {
     return(
         <div>
-            {pokeCards.map(card => pokeCard(card))}
+            {pokeCards.map(card => <PokeCard card={card} />)}
         </div>
     );
 }
